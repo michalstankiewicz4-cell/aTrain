@@ -14,11 +14,11 @@
 
 ## Styki szyn
 
-- Szyny są pocięte na odcinki ze szczeliną (suwak 0–30 mm, domyślnie 20 mm) i łączone łubkami.
+- Szyny są pocięte na odcinki ze szczeliną (suwak 0–30 mm, domyślnie 25 mm) i łączone łubkami.
 - Szczelina istnieje w fizyce: koło przejeżdża nad przerwą i uderza w krawędź następnej szyny (stąd dźwięk „styki szyn”).
 
 ## Podkłady i teren
 
 - Podkłady drewniane co 0,65 m, każdy jako fizyczny prostopadłościan.
-- Podsypka tłuczniowa i grunt z trawą; poza podsypką grunt jest miękki i stawia opór toczenia.
+- Podsypka tłuczniowa; poza nią ląd z [lad.md](lad.md) — miękki grunt z oporem toczenia, zbocza góry, skarpa i dno morza.
 - Przystanek autobusowy przy torze — dla żartu.

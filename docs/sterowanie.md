@@ -16,15 +16,23 @@
 Mysz: lewy przycisk — obrót, prawy — przesuw, kółko — przybliżenie.
 Klawiatura: **W S A D** — ruch kamery.
 
-## Filtry (u góry pośrodku)
+## Menu
+
+Przycisk **Ukryj menu** (lewy górny róg) albo klawisz **H** chowa wszystkie panele; ten sam przycisk („Pokaż menu”) je przywraca.
+
+## Filtry, pogoda i wygląd (u góry pośrodku)
 
 - **Pixelart**, **Scanlines**, **CRT** — niezależne checkboxy, można łączyć.
 - **Paleta**: naturalna (domyślna), b&w, sepia, odcienie szarości, CGA.
 - **Pora dnia**: suwak 0–24 h. W nocy niebo z gwiazdami i księżycem, światła pociągu rzucają cienie.
+- **Pogoda**: bezchmurnie, pogodnie, zachmurzenie, pochmurno, deszcz, mgła, burza. **Zmienne warunki** — pogoda sama się zmienia (szczegóły w [pogoda.md](pogoda.md)).
+- **Wygląd**: Naturalny (domyślny), Filmowy, Bodycam — zestawy z laboratorium wyglądu (kolor, kontrast, efekty obiektywu).
+- **Tony**: mapowanie tonów ACES (domyślne), AgX, Hable.
+- **Obiektyw**: winieta, ziarno, aberracja chromatyczna, dystorsja, krople na szkle, brud, odblask słońca, wyostrzenie — każdy osobno, można łączyć z filtrami i paletami. W deszczu krople na obiektywie pojawiają się same.
 
 ## Dźwięki (u góry po prawej)
 
-Każdy dźwięk włącza się osobno: tarcie kół, łańcuch, sprzęg Janneya, styki szyn, zderzaki, koło o podkład. Szczegóły w [dzwieki.md](dzwieki.md).
+Każdy dźwięk włącza się osobno: tarcie kół, łańcuch, sprzęg Janneya, styki szyn, zderzaki, koło o podkład, grzmoty. Szczegóły w [dzwieki.md](dzwieki.md).
 
 ## Panel na dole
 
@@ -40,7 +48,7 @@ Każdy dźwięk włącza się osobno: tarcie kół, łańcuch, sprzęg Janneya, 
 | Zwrotnica 1 / 2 | łuk / prosto | Przestawia rozjazd (łuk = owal, prosto = przedłużenie) |
 | Sprzęg 1 | rozprzęgnij / sprzęgnij | Podnosi dźwignię sprzęgu kłowego; ponowne sprzęgnięcie następuje fizycznie przy najeździe |
 | Sprzęg 2 | zdejmij z haka / załóż | Zdejmuje lub zakłada łańcuch na hak |
-| Szczelina styków | 0–30 mm | Przerwa między szynami (fizyczna, nie tylko wizualna) |
+| Szczelina styków | 0–30 mm (domyślnie 25) | Przerwa między szynami (fizyczna, nie tylko wizualna) |
 | Luz obrzeży | 0–15 mm | Luz między obrzeżami kół a szynami, dla wszystkich kół naraz |
 
 Jeśli symulacja się rozsypie (wartości nieskończone), pojawia się komunikat z prośbą o restart.

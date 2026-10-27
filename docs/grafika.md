@@ -27,9 +27,13 @@ Współrzędne UV liczone w skali świata, żeby faktura miała tę samą wielko
 - Dym z wydechu i iskry spod kół (cząsteczki).
 - Tonemapping ACES, sRGB.
 
-## Filtry
+## Ląd, las i pogoda
 
-Ostatni przebieg renderowania: pixelart, scanlines, CRT (łączone) oraz palety z ditheringiem Bayera.
+Teren, morze i las — [lad.md](lad.md); niebo z chmurami, deszcz i pioruny — [pogoda.md](pogoda.md). Odbicia i światło otoczenia materiałów liczone są z tego samego nieba co widać (odświeżane przy zmianie pogody i pory dnia).
+
+## Filtry i wygląd kamery
+
+Ostatni przebieg renderowania (jeden szader): ekspozycja, mapowanie tonów (ACES / AgX / Hable), temperatura barwowa i odcień, nasycenie, żywość, kontrast, efekty obiektywu z laboratorium wyglądu (LookPipeline: winieta, ziarno, aberracja chromatyczna, dystorsja beczkowa, krople na szkle, brud, odblask słońca, wyostrzenie), a potem pixelart, scanlines, CRT i palety z ditheringiem Bayera. Efekt wyłączony nie kosztuje nic.
 
 ## Optymalizacja
 

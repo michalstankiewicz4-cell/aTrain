@@ -58,7 +58,7 @@ Cała fizyka to własny silnik w JavaScripcie (obiekt `PHYS` w `index.html`), li
 ## Teren
 
 - Podkłady to fizyczne prostopadłościany — po wykolejeniu koła uderzają w nie.
-- Podsypka jako pole wysokości, poza nią miękki grunt z oporem toczenia.
+- Podsypka jako pole wysokości, poza nią ląd z mapy wysokości (`LAND`, ta sama co w grafice): miękki grunt z oporem toczenia, zbocza góry, skarpa, dno morza. Wykolejone koła i narożniki pudeł opierają się o rzeczywistą wysokość gruntu w danym miejscu.
 
 ## Bezpieczniki
 

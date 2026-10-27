@@ -1,16 +1,19 @@
-# Budowa `index.html`
+# Pliki projektu
 
-Całość to jeden plik HTML bez kroku budowania. Kolejność w pliku:
+Strona statyczna bez kroku budowania. `index.html` ładuje Three.js r147 z jsDelivr, a potem skrypty projektu w tej kolejności (zwykłe skrypty, wspólny zakres globalny):
 
-1. **`<head>`** — tytuł, `<meta name="version">`, czcionki, style CSS interfejsu.
-2. **Interfejs** — kamera (lewo), filtry i pora dnia (góra), dźwięki (prawo), panel nastawnika (dół), komunikat o awarii symulacji.
-3. **Skrypty Three.js** z jsDelivr: biblioteka, OrbitControls i przebiegi post-processingu (EffectComposer, RenderPass, ShaderPass, UnrealBloomPass).
-4. **Fizyka — obiekt `PHYS`**: stałe, geometria toru i rozjazdów, ciała, pojazdy, sprzęgi, łańcuch, zderzaki, kontakt koło–szyna, teren, krok symulacji.
-5. **Scena** — renderer, kamery, pora dnia, niebo, gwiazdy, księżyc, post-processing.
-6. **Zestaw tekstur `TK`** — generatory canvas.
-7. **Tabor** — materiały i funkcje `buildLoco`, `buildWoodVan`, `buildSteelVan`.
-8. **Teren i tor** — szyny, łubki, podkłady, podsypka, rozjazdy, przystanek.
-9. **Obsługa interfejsu** — przyciski, suwaki, kamery, klawisze WSAD.
-10. **Dźwięki** — Web Audio.
-11. **Efekty** — mapa otoczenia, dym, iskry, poświaty, stożek reflektora.
-12. **Pętla** — `frame()` zawsze najpierw planuje kolejną klatkę, potem w `try` liczy fizykę, efekty, dźwięki i rysuje.
+| Plik | Zawartość |
+|---|---|
+| `index.html` | Nagłówek (meta SEO, Open Graph, JSON-LD), style, interfejs: kamera, filtry/pogoda/wygląd, dźwięki, panel nastawnika |
+| `js/physics.js` | `PHYS` — silnik fizyczny: tor i rozjazdy, ciała, pojazdy, sprzęgi, łańcuch, zderzaki, kontakt koło–szyna, teren, krok symulacji. Działa też w Node (`module.exports`) do testów |
+| `js/land.js` | `LAND` — mapa wysokości lądu (góra, skarpa, morze, wzgórza), wspólna dla fizyki i grafiki. Działa też w Node |
+| `js/texkit.js` | `TK` — tekstury proceduralne (canvas), `fitUV`, `roundedBox` |
+| `js/stock.js` | `initStock(mat)` — materiały i modele taboru: `buildLoco`, `buildWoodVan`, `buildSteelVan` |
+| `js/plants.js` | `PLANTS` — drzewa i krzewy z kodu, imitacje (impostory), las |
+| `js/world.js` | `initWorld(...)` — siatki terenu, morze, rozmieszczenie lasu |
+| `js/weather.js` | `initWeather(...)` — niebo z chmurami, odbicia, deszcz, pioruny, zmienne warunki |
+| `js/app.js` | Aplikacja: scena, pora dnia, kamery, potok obrazu (bloom, filtry, wygląd kamery), tor i podkłady, przystanek, pojazdy, sterowanie, dźwięki, efekty, pętla |
+| `assets/screenshot.jpg` | Obraz podglądu dla wyszukiwarek i mediów społecznościowych (1200 × 630) |
+| `sitemap.xml` | Mapa strony dla wyszukiwarek |
+
+Do testów z konsoli przeglądarki: `window.__train` (symulacja, świat, pogoda, renderer, kamera).

@@ -2,6 +2,19 @@
 
 Format: [docs/wersjonowanie.md](docs/wersjonowanie.md).
 
+## 1.1.0 — 2026-10-27
+
+- Nowy ląd z laboratorium lądu: wysoka góra w środku owalu, skarpa nad morzem, łagodne wzgórza; teren wspólny dla fizyki i grafiki (wykolejony skład zatrzymuje się na zboczu).
+- Morze z falami, prześwitującą płycizną i pianą przy brzegu.
+- Las z laboratorium roślin: ok. 10 tys. drzew (świerk, sosna, brzoza, dąb, jałowiec), pełne modele blisko, imitacje dalej, kołysanie na wietrze.
+- Pogoda z laboratorium wyglądu: chmury, deszcz, mgła, burza z piorunami, wiatr; przycisk „Zmienne warunki”; dźwięk „Grzmoty”.
+- Wygląd kamery: zestawy Naturalny / Filmowy / Bodycam, mapowanie tonów ACES / AgX / Hable, efekty obiektywu (winieta, ziarno, aberracja, dystorsja, krople, brud, odblask słońca, wyostrzenie).
+- Ukrywanie menu (przycisk i klawisz H).
+- Głośniejsze stukanie kół na stykach szyn; domyślna szczelina styków 25 mm.
+- Poprawne kodowanie polskich znaków (pełny nagłówek HTML z UTF-8).
+- Angielskie SEO: tytuł, opis, frazy, Open Graph, karta Twittera, dane strukturalne, mapa strony, obraz podglądu.
+- Projekt podzielony na pliki w `js/`.
+
 ## 1.0.0 — 2026-10-27
 
 Pierwsze wydanie na GitHubie.
