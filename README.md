@@ -6,6 +6,8 @@ Symulacja 3D lokomotywy spalinowej i dwóch wagonów jeżdżących po torze z pr
 
 Wersja: zobacz plik [`VERSION`](VERSION) i [`CHANGELOG.md`](CHANGELOG.md).
 
+> **GameLaboratory:** tabor (lokomotywa i wagony z częściami) oraz fizyka koło–szyna z rozjazdami są też w [GameLaboratory](https://michalstankiewicz4-cell.github.io/GameLaboratory/labs/vehicles.html) (repozytorium `michalstankiewicz4-cell/GameLaboratory`, z historią): model jako TrainKit (`js/models/train/`), fizyka jako zachowanie „koło na szynie” (`js/behaviors/rail/`, obliczenia bez zmian), sieć torowa w `js/models/structures/railway/`. Ten projekt zostaje jako samodzielna symulacja.
+
 ## Co jest w środku
 
 - **Tabor**: lokomotywa SM31-017 (napęd na obie osie), wagon kryty drewniany i wagon kryty stalowy — modele i tekstury generowane proceduralnie w przeglądarce.
